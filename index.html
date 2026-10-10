@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Mộc Books - nơi những cuốn sách hay tìm thấy người đọc phù hợp."
+    />
+    <title>Mộc Books — Mở trang sách, mở thế giới</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <input class="theme-switch-control sr-only" type="checkbox" id="theme-switch" />
+    <div class="announcement">
+      <p>Gửi yêu thương qua từng trang sách — miễn phí vận chuyển từ 299K</p>
+    </div>
+
+    <header class="site-header" id="top">
+      <div class="header-inner">
+        <a class="brand" href="#" aria-label="Mộc Books - Trang chủ">
+          <span class="brand-mark" aria-hidden="true">m.</span>
+          <span>Mộc <span class="brand-light">Books</span></span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Điều hướng chính">
+          <a class="nav-link nav-link-active" href="#sach-moi">Sách mới</a>
+          <a class="nav-link" href="#ban-chay">Bán chạy</a>
+          <a class="nav-link" href="#danh-muc">Danh mục</a>
+        </nav>
+
+        <div class="header-actions">
+          <label class="theme-toggle" for="theme-switch" title="Chuyển đổi giao diện sáng và tối">
+            <span class="sr-only">Chuyển đổi giao diện sáng và tối</span>
+            <span class="theme-icon theme-icon-dark" aria-hidden="true">☾</span>
+            <span class="theme-icon theme-icon-light" aria-hidden="true">☼</span>
+          </label>
+          <form class="search-form" role="search" action="#" method="get">
+            <label class="sr-only" for="book-search">Tìm sách, tác giả</label>
+            <span class="search-icon" aria-hidden="true">⌕</span>
+            <input
+              id="book-search"
+              type="search"
+              name="q"
+              placeholder="Tìm sách, tác giả..."
+            />
+            <kbd>⌘ K</kbd>
+          </form>
+          <a class="icon-button account-button" href="#tai-khoan" aria-label="Tài khoản">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="3.5" />
+              <path d="M5 20c.6-3.5 3.1-5.5 7-5.5s6.4 2 7 5.5" />
+            </svg>
+          </a>
+          <a class="icon-button cart-button" href="#gio-hang" aria-label="Giỏ hàng, 2 sản phẩm">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3.5 4h2l2.1 11.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.5L21 8H6.2" />
+              <circle cx="10" cy="20" r="1" />
+              <circle cx="18" cy="20" r="1" />
+            </svg>
+            <span class="cart-count">2</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="eyebrow-dot" aria-hidden="true"></span>
+            <span>Góc nhỏ dành cho người mê đọc</span>
+          </p>
+          <h1 id="hero-title">Mở trang sách,<br />mở <em>thế giới.</em></h1>
+          <p class="hero-description">
+            <span class="animate__animated animate__backInUp">Sách hay, chạm cảm xúc.</span>
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#sach-moi">
+              Khám phá sách mới <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#ban-chay">Xem sách bán chạy <span aria-hidden="true">→</span></a>
+          </div>
+          <div class="reader-note">
+            <div class="reader-avatars" aria-hidden="true">
+              <span>H</span><span>M</span><span>A</span><span>+</span>
+            </div>
+            <p><strong>12.000+</strong> độc giả đã tìm thấy cuốn sách yêu thích</p>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Bộ sưu tập sách được yêu thích">
+          <div class="hero-sun" aria-hidden="true"></div>
+          <span class="art-spark spark-one" aria-hidden="true">✳</span>
+          <span class="art-spark spark-two" aria-hidden="true">✦</span>
+          <div class="hero-book hero-book-back">
+            <span class="hero-book-kicker">NHỮNG ĐIỀU NHỎ BÉ</span>
+            <span class="hero-book-title">Ngày<br />nắng đẹp</span>
+            <span class="hero-book-author">LÊ MINH HÀ</span>
+          </div>
+          <div class="hero-book hero-book-front">
+            <span class="hero-book-kicker">MỘT CUỐN SÁCH VỀ</span>
+            <span class="hero-book-title">Chậm<br />lại một<br />chút</span>
+            <span class="hero-book-author">AN NHIÊN</span>
+            <span class="cover-sun" aria-hidden="true"></span>
+          </div>
+          <div class="hero-caption">
+            <span class="caption-line"></span>
+            <span>Chọn sách theo tâm trạng</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits" aria-label="Lợi ích khi mua sách tại Mộc">
+        <article class="benefit">
+          <span class="benefit-icon" aria-hidden="true">✳</span>
+          <div>
+            <h2>Chọn lọc kỹ càng</h2>
+            <p>Mỗi cuốn sách đều có câu chuyện riêng</p>
+          </div>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon" aria-hidden="true">♡</span>
+          <div>
+            <h2>Gói quà thật xinh</h2>
+            <p>Trao sách, gửi trọn yêu thương</p>
+          </div>
+        </article>
+        <article class="benefit">
+          <span class="benefit-icon" aria-hidden="true">↗</span>
+          <div>
+            <h2>Giao hàng tận nơi</h2>
+            <p>Nhanh chóng, an tâm, tiện lợi</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="book-section" id="sach-moi" aria-labelledby="new-books-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Vừa cập bến Mộc</p>
+            <h2 id="new-books-title">Sách mới <em>đáng mong chờ</em></h2>
+          </div>
+          <a class="text-link section-link" href="#tat-ca-sach">Xem tất cả <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="book-grid">
+          <article class="book-card">
+            <div class="book-card-inner">
+              <div class="book-face book-face-front">
+                <a class="book-cover cover-quiet" href="#book-1" aria-label="Xem sách Một đời như kẻ tìm đường">
+                  <span class="cover-label">TẢN VĂN</span>
+                  <span class="cover-title">Một đời<br />như kẻ<br /><i>tìm đường</i></span>
+                  <span class="cover-author">PHAN ANH</span>
+                  <span class="cover-ornament" aria-hidden="true">✳</span>
+                  <span class="book-badge">Mới</span>
+                </a>
+                <p class="flip-hint">Di chuột để xem chi tiết <span aria-hidden="true">↻</span></p>
+              </div>
+              <div class="book-face book-face-back">
+                <p class="book-category">TẢN VĂN <span class="rating">★ 4.9</span></p>
+                <h3>Một đời như kẻ tìm đường</h3>
+                <dl class="book-details-list">
+                  <div><dt>Tác giả</dt><dd>Phan Anh</dd></div>
+                  <div><dt>Thể loại</dt><dd>Tản văn</dd></div>
+                  <div><dt>Số lượng</dt><dd>Còn 12 cuốn</dd></div>
+                </dl>
+                <div class="book-back-footer">
+                  <strong>118.000₫</strong><del>145.000₫</del>
+                  <a href="#book-1">Chi tiết <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <div class="book-card-inner">
+              <div class="book-face book-face-front">
+                <a class="book-cover cover-garden" href="#book-2" aria-label="Xem sách Khu vườn bí mật">
+                  <span class="cover-label">VĂN HỌC</span>
+                  <span class="cover-title">Khu vườn<br /><i>bí mật</i></span>
+                  <span class="cover-author">FRANCES H. BURNETT</span>
+                  <span class="cover-flower" aria-hidden="true">✿</span>
+                  <span class="book-badge">-20%</span>
+                </a>
+                <p class="flip-hint">Di chuột để xem chi tiết <span aria-hidden="true">↻</span></p>
+              </div>
+              <div class="book-face book-face-back">
+                <p class="book-category">VĂN HỌC <span class="rating">★ 4.8</span></p>
+                <h3>Khu vườn bí mật</h3>
+                <dl class="book-details-list">
+                  <div><dt>Tác giả</dt><dd>Frances H. Burnett</dd></div>
+                  <div><dt>Thể loại</dt><dd>Văn học</dd></div>
+                  <div><dt>Số lượng</dt><dd>Còn 8 cuốn</dd></div>
+                </dl>
+                <div class="book-back-footer">
+                  <strong>96.000₫</strong><del>120.000₫</del>
+                  <a href="#book-2">Chi tiết <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <div class="book-card-inner">
+              <div class="book-face book-face-front">
+                <a class="book-cover cover-things" href="#book-3" aria-label="Xem sách Những điều tử tế">
+                  <span class="cover-label">SỐNG ĐẸP</span>
+                  <span class="cover-title">Những<br />điều<br /><i>tử tế</i></span>
+                  <span class="cover-author">MINH THƯ</span>
+                  <span class="cover-flower" aria-hidden="true">✳</span>
+                  <span class="book-badge">Mới</span>
+                </a>
+                <p class="flip-hint">Di chuột để xem chi tiết <span aria-hidden="true">↻</span></p>
+              </div>
+              <div class="book-face book-face-back">
+                <p class="book-category">SỐNG ĐẸP <span class="rating">★ 5.0</span></p>
+                <h3>Những điều tử tế</h3>
+                <dl class="book-details-list">
+                  <div><dt>Tác giả</dt><dd>Minh Thư</dd></div>
+                  <div><dt>Thể loại</dt><dd>Kỹ năng sống</dd></div>
+                  <div><dt>Số lượng</dt><dd>Còn 15 cuốn</dd></div>
+                </dl>
+                <div class="book-back-footer">
+                  <strong>132.000₫</strong><del>165.000₫</del>
+                  <a href="#book-3">Chi tiết <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <div class="book-card-inner">
+              <div class="book-face book-face-front">
+                <a class="book-cover cover-moon" href="#book-4" aria-label="Xem sách Tiệm sách của những giấc mơ">
+                  <span class="cover-label">TIỂU THUYẾT</span>
+                  <span class="cover-title">Tiệm sách<br />của những<br /><i>giấc mơ</i></span>
+                  <span class="cover-author">KIM JI-HYE</span>
+                  <span class="cover-moon" aria-hidden="true"></span>
+                  <span class="book-badge">Bán chạy</span>
+                </a>
+                <p class="flip-hint">Di chuột để xem chi tiết <span aria-hidden="true">↻</span></p>
+              </div>
+              <div class="book-face book-face-back">
+                <p class="book-category">TIỂU THUYẾT <span class="rating">★ 4.9</span></p>
+                <h3>Tiệm sách của những giấc mơ</h3>
+                <dl class="book-details-list">
+                  <div><dt>Tác giả</dt><dd>Kim Ji-hye</dd></div>
+                  <div><dt>Thể loại</dt><dd>Tiểu thuyết</dd></div>
+                  <div><dt>Số lượng</dt><dd>Còn 5 cuốn</dd></div>
+                </dl>
+                <div class="book-back-footer">
+                  <strong>145.000₫</strong><del>180.000₫</del>
+                  <a href="#book-4">Chi tiết <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <div class="book-card-inner">
+              <div class="book-face book-face-front">
+                <a class="book-cover cover-sand" href="#book-5" aria-label="Xem sách Nhà giả kim">
+                  <span class="cover-label">TIỂU THUYẾT</span>
+                  <span class="cover-title">Nhà<br /><i>giả kim</i></span>
+                  <span class="cover-author">PAULO COELHO</span>
+                  <span class="cover-flower" aria-hidden="true">☼</span>
+                  <span class="book-badge">Được yêu thích</span>
+                </a>
+                <p class="flip-hint">Di chuột để xem chi tiết <span aria-hidden="true">↻</span></p>
+              </div>
+              <div class="book-face book-face-back">
+                <p class="book-category">TIỂU THUYẾT <span class="rating">★ 4.9</span></p>
+                <h3>Nhà giả kim</h3>
+                <dl class="book-details-list">
+                  <div><dt>Tác giả</dt><dd>Paulo Coelho</dd></div>
+                  <div><dt>Thể loại</dt><dd>Tiểu thuyết</dd></div>
+                  <div><dt>Số lượng</dt><dd>Còn 21 cuốn</dd></div>
+                </dl>
+                <div class="book-back-footer">
+                  <strong>79.000₫</strong><del>100.000₫</del>
+                  <a href="#book-5">Chi tiết <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <div class="book-card-inner">
+              <div class="book-face book-face-front">
+                <a class="book-cover cover-night" href="#book-6" aria-label="Xem sách Rừng Na Uy">
+                  <span class="cover-label">VĂN HỌC</span>
+                  <span class="cover-title">Rừng<br /><i>Na Uy</i></span>
+                  <span class="cover-author">HARUKI MURAKAMI</span>
+                  <span class="cover-flower" aria-hidden="true">✳</span>
+                  <span class="book-badge">Bán chạy</span>
+                </a>
+                <p class="flip-hint">Di chuột để xem chi tiết <span aria-hidden="true">↻</span></p>
+              </div>
+              <div class="book-face book-face-back">
+                <p class="book-category">VĂN HỌC <span class="rating">★ 4.8</span></p>
+                <h3>Rừng Na Uy</h3>
+                <dl class="book-details-list">
+                  <div><dt>Tác giả</dt><dd>Haruki Murakami</dd></div>
+                  <div><dt>Thể loại</dt><dd>Văn học Nhật Bản</dd></div>
+                  <div><dt>Số lượng</dt><dd>Còn 9 cuốn</dd></div>
+                </dl>
+                <div class="book-back-footer">
+                  <strong>115.000₫</strong><del>145.000₫</del>
+                  <a href="#book-6">Chi tiết <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="book-card">
+            <div class="book-card-inner">
+              <div class="book-face book-face-front">
+                <a class="book-cover cover-orange" href="#book-7" aria-label="Xem sách Cây cam ngọt của tôi">
+                  <span class="cover-label">VĂN HỌC</span>
+                  <span class="cover-title">Cây cam<br /><i>ngọt của tôi</i></span>
+                  <span class="cover-author">J. M. DE VASCONCELOS</span>
+                  <span class="cover-flower" aria-hidden="true">✿</span>
+                  <span class="book-badge">Mộc gợi ý</span>
+                </a>
+                <p class="flip-hint">Di chuột để xem chi tiết <span aria-hidden="true">↻</span></p>
+              </div>
+              <div class="book-face book-face-back">
+                <p class="book-category">VĂN HỌC <span class="rating">★ 5.0</span></p>
+                <h3>Cây cam ngọt của tôi</h3>
+                <dl class="book-details-list">
+                  <div><dt>Tác giả</dt><dd>J. M. de Vasconcelos</dd></div>
+                  <div><dt>Thể loại</dt><dd>Văn học thiếu nhi</dd></div>
+                  <div><dt>Số lượng</dt><dd>Còn 17 cuốn</dd></div>
+                </dl>
+                <div class="book-back-footer">
+                  <strong>108.000₫</strong><del>135.000₫</del>
+                  <a href="#book-7">Chi tiết <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="editor-pick" id="ban-chay" aria-labelledby="editor-pick-title">
+        <div class="editor-copy">
+          <p class="eyebrow">Lựa chọn của tuần</p>
+          <h2 id="editor-pick-title">Đôi khi, điều ta cần chỉ là một <em>khoảng lặng.</em></h2>
+          <p>
+            Những trang viết dịu dàng nhắc ta rằng: sống chậm không phải đứng yên,
+            mà là để trái tim kịp cảm nhận hành trình.
+          </p>
+          <a class="button button-light" href="#book-5">Khám phá cuốn sách <span aria-hidden="true">↗</span></a>
+          <span class="editor-note">MỘC GỢI Ý · THÁNG 10</span>
+        </div>
+        <div class="editor-visual" aria-hidden="true">
+          <div class="editor-plant plant-one"></div>
+          <div class="editor-plant plant-two"></div>
+          <div class="editor-featured-book">
+            <span class="featured-small">TÌM LẠI SỰ AN YÊN TRONG BẠN</span>
+            <span class="featured-title">Nghệ thuật<br />của việc<br /><i>ngồi yên</i></span>
+            <span class="featured-author">TRẦN HẠNH</span>
+            <span class="featured-orbit" aria-hidden="true"></span>
+          </div>
+          <span class="editor-sticker">ĐỌC<br />CHẬM<br />THÔI!</span>
+        </div>
+      </section>
+
+      <section class="category-section" id="danh-muc" aria-labelledby="category-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Một thế giới trong tầm tay</p>
+            <h2 id="category-title">Bạn đang muốn đọc gì?</h2>
+          </div>
+        </div>
+        <div class="category-grid">
+          <a class="category-card category-literature" href="#van-hoc">
+            <span class="category-icon" aria-hidden="true">✳</span>
+            <span><strong>Văn học</strong><small>Chạm vào những câu chuyện</small></span>
+            <span class="category-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="category-card category-lifestyle" href="#ky-nang">
+            <span class="category-icon" aria-hidden="true">☼</span>
+            <span><strong>Kỹ năng sống</strong><small>Lớn lên theo cách của bạn</small></span>
+            <span class="category-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="category-card category-children" href="#thieu-nhi">
+            <span class="category-icon" aria-hidden="true">♡</span>
+            <span><strong>Thiếu nhi</strong><small>Nuôi dưỡng trí tưởng tượng</small></span>
+            <span class="category-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="category-card category-business" href="#kinh-doanh">
+            <span class="category-icon" aria-hidden="true">⌁</span>
+            <span><strong>Kinh doanh</strong><small>Ý tưởng cho ngày mai</small></span>
+            <span class="category-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="newsletter" id="ve-moc" aria-labelledby="newsletter-title">
+        <div>
+          <p class="eyebrow">Lá thư từ Mộc</p>
+          <h2 id="newsletter-title">Một chút cảm hứng,<br /><em>gửi vào hộp thư.</em></h2>
+        </div>
+        <form class="newsletter-form" action="#" method="post">
+          <label class="sr-only" for="email">Địa chỉ email của bạn</label>
+          <input id="email" name="email" type="email" placeholder="Địa chỉ email của bạn" required />
+          <button type="submit" aria-label="Đăng ký nhận thư">Đăng ký <span aria-hidden="true">→</span></button>
+          <p>Mỗi tháng một lá thư nhỏ. Không spam, chỉ có sách hay.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-about">
+          <a class="brand footer-brand" href="#" aria-label="Mộc Books - Trang chủ">
+            <span class="brand-mark" aria-hidden="true">m.</span>
+            <span>Mộc <span class="brand-light">Books</span></span>
+          </a>
+          <p>Nơi những cuốn sách hay<br />tìm thấy người đọc phù hợp.</p>
+        </div>
+        <div class="footer-column">
+          <h2>Khám phá</h2>
+          <a href="#sach-moi">Sách mới</a>
+          <a href="#ban-chay">Sách bán chạy</a>
+          <a href="#danh-muc">Danh mục sách</a>
+        </div>
+        <div class="footer-column">
+          <h2>Hỗ trợ</h2>
+          <a href="#huong-dan">Hướng dẫn mua hàng</a>
+          <a href="#van-chuyen">Chính sách vận chuyển</a>
+          <a href="#lien-he">Liên hệ với Mộc</a>
+        </div>
+        <div class="footer-contact">
+          <h2>Ghé thăm Mộc</h2>
+          <p>12 Nguyễn Thị Minh Khai, Q. 1<br />TP. Hồ Chí Minh</p>
+          <a href="mailto:chao@mocbooks.vn">chao@mocbooks.vn</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Mộc Books. Đọc một chút, thương một đời.</p>
+        <div><a href="#privacy">Quyền riêng tư</a><a href="#terms">Điều khoản</a></div>
+      </div>
+    </footer>
+    <a class="floating-top-button" href="#top" aria-label="Cuộn lên đầu trang">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 19V5M6 11l6-6 6 6" />
+      </svg>
+    </a>
+    <details class="support-widget">
+      <summary class="support-chat-toggle">
+        <span class="sr-only">Mở hoặc đóng khung chat hỗ trợ</span>
+        <svg class="support-chat-open-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M20 11.5a7.5 7.5 0 0 1-8 7.5 8.5 8.5 0 0 1-3.4-.7L4 20l1.4-3.7A7.2 7.2 0 0 1 4 12c0-4.4 3.6-8 8-8s8 3.1 8 7.5Z" />
+          <path d="M8 12h.01M12 12h.01M16 12h.01" />
+        </svg>
+        <svg class="support-chat-close-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m6 6 12 12M18 6 6 18" />
+        </svg>
+      </summary>
+      <section
+        class="support-chat"
+        id="support-chat"
+        aria-labelledby="support-chat-title"
+      >
+        <header class="support-chat-header">
+          <div class="support-agent-avatar" aria-hidden="true">m.</div>
+          <div class="support-agent-copy">
+            <h2 id="support-chat-title">Đội ngũ Mộc</h2>
+            <p><span class="support-online-dot"></span> Luôn sẵn lòng hỗ trợ</p>
+          </div>
+        </header>
+        <div class="support-chat-body">
+          <p class="support-greeting">Xin chào! Mộc có thể giúp bạn tìm cuốn sách phù hợp nào hôm nay?</p>
+          <p class="support-email-note">Gửi câu hỏi cho đội ngũ Mộc qua email.</p>
+          <form
+            class="support-chat-form"
+            action="mailto:chao@mocbooks.vn"
+            method="post"
+            enctype="text/plain"
+          >
+            <label class="sr-only" for="support-message">Nội dung cần hỗ trợ</label>
+            <textarea
+              id="support-message"
+              name="message"
+              rows="3"
+              placeholder="Nhập tin nhắn của bạn..."
+              required
+            ></textarea>
+            <button class="support-send-button" type="submit">
+              Gửi qua email <span aria-hidden="true">↗</span>
+            </button>
+          </form>
+        </div>
+      </section>
+    </details>
+  </body>
+</html>
